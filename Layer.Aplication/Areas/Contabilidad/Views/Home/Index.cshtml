@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+<h1>Modulo Contabilidad</h1>
+<!--Enlace Area Ventas-->
+@Html.ActionLink("Ventas", "Index", new { area = "Ventas", controller = "Home" }, new { @class = "btn btn-primary text-light" })
+
+<!--Enlace Area Contabilidad-->
+@Html.ActionLink("Contabilidad", "Index", new { area = "Contabilidad", controller = "Home" }, new { @class = "btn btn-success text-light" })
+
+<!--Enlace Area Logistica-->
+@Html.ActionLink("Logistica", "Index", new { area = "Logistica", controller = "Home" }, new { @class = "btn btn-danger text-light" })
+
+<!--Enlace Portal Principal-->
+@Html.ActionLink("Principal", "Index", "/", null, new { @class = "btn btn-dark text-light" })
+
+
